@@ -26,7 +26,7 @@ Inicio
    fimenquanto
 
    // Exibe o total final
-   escreval("Valor total das compras: R$ ", totalCompra)
+   escreval("Valor total das compras: R$ ", totalCompra:4:2)
    escreval(" ")
 
 fimalgoritmo
