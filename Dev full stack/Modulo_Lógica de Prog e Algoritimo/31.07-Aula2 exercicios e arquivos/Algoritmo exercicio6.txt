@@ -1,0 +1,26 @@
+Algoritmo "exercicio6"
+
+Var
+// Seção Declaração das variáveis 
+saldo, valorSaque : real
+
+Inicio
+// Seção de comandos 
+saldo <- 1000.00 // Saldo inicial de exemplo
+
+escreval("Saldo atual: R$ ", saldo)
+escreval("Digite o valor do saque: ")
+leia(valorSaque)
+
+se valorSaque <= 0 entao
+    escreval("Valor inválido para saque!")
+senao
+    se valorSaque <= saldo entao
+        saldo <- saldo - valorSaque
+        escreval("Saque realizado! Novo saldo: R$ ", saldo)
+    senao
+        escreval("Saldo insuficiente!")
+    fimse
+fimse
+
+fimalgoritmo

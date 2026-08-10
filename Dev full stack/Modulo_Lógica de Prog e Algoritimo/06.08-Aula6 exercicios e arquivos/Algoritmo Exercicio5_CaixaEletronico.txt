@@ -1,0 +1,29 @@
+Algoritmo "Exercicio5_CaixaEletronico"
+
+// Crie um algoritmo de um caixa eletrônico. Deve solicitar a senha do
+// cliente e, enquanto a senha informada for diferente de 2026,
+// solicitar uma nova tentativa. Quando a senha estiver correta,
+// exiba "Acesso liberado!". Estrutura: ENQUANTO.
+
+Var
+// Seção de Declarações das variáveis
+   senha : inteiro
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   escreval("Caixa Eletrônico")
+   escreval("Digite sua senha de 4 dígitos: ")
+   leia(senha)
+
+   // Laço de repetição: continua pedindo a senha ENQUANTO for diferente de 2026
+   enquanto (senha <> 2026) faca
+      escreval("Senha incorreta! Tente novamente: ")
+      leia(senha)
+   fimenquanto
+
+   // Mensagem exibida somente quando a senha estiver correta (igual a 2026)
+   escreval("")
+   escreval("Acesso liberado!")
+
+fimalgoritmo

@@ -1,0 +1,61 @@
+Algoritmo "exercicio16_EleicaoDaTurma"
+
+// Leia o voto de 20 alunos. Cada voto pode ser: 1 – João, 2 – Maria,
+// 3 – Carlos. Ao final informe quantos votos cada candidato recebeu e
+// quem venceu a eleição.
+
+Var
+// Seção de Declarações das variáveis
+   i, voto, votosJoao, votosMaria, votosCarlos : inteiro
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   // Inicializamos os contadores de votos com zero
+   votosJoao   <- 0
+   votosMaria  <- 0
+   votosCarlos <- 0
+
+   // O laço vai repetir 20 vezes (para os 20 alunos)
+   para i de 1 ate 20 faca
+      escreval("Aluno ", i, ", digite seu voto:")
+      escreval("1 - João | 2 - Maria | 3 - Carlos")
+      leia(voto)
+
+      // Incrementa o voto para o candidato escolhido
+      escolha voto
+         caso 1
+            votosJoao <- votosJoao + 1
+         caso 2
+            votosMaria <- votosMaria + 1
+         caso 3
+            votosCarlos <- votosCarlos + 1
+         outrocaso
+            escreval("Voto inválido! Tente novamente.")
+      fimescolha
+      escreval("")
+   fimpara
+
+   // Exibição dos resultados parciais
+   escreval("=== RESULTADO DA ELEIÇÃO ===")
+   escreval("Votos do João: ", votosJoao)
+   escreval("Votos da Maria: ", votosMaria)
+   escreval("Votos do Carlos: ", votosCarlos)
+   escreval("")
+
+   // Verificação de quem venceu ou se houve empate
+   se (votosJoao > votosMaria) e (votosJoao > votosCarlos) entao
+      escreval("Vencedor: João!")
+   senao
+      se (votosMaria > votosJoao) e (votosMaria > votosCarlos) entao
+         escreval("Vencedora: Maria!")
+      senao
+         se (votosCarlos > votosJoao) e (votosCarlos > votosMaria) entao
+            escreval("Vencedor: Carlos!")
+         senao
+            escreval("Houve um empate na eleição!")
+         fimse
+      fimse
+   fimse
+
+fimalgoritmo

@@ -1,0 +1,26 @@
+Algoritmo "exercício14_Soma dos Números"
+
+//Leia um número inteiro N. Calcule a soma de todos os números de 1 até N.
+
+Var
+// Seção de Declarações das variáveis
+   n, i, soma: inteiro
+   
+Inicio
+   // Seção de comandos, procedimentos, funções, operador
+	escreval ("Digite um numero inteiro N: ")
+   leia(n)
+
+  //variavel acumuludarora
+  soma <- 0
+  
+  //calculo
+  escreval("Calcule a soma de todos os numeros de 1 ate N: ")
+  para i de 1 ate n faca
+     soma <- soma + i
+  fimpara
+  
+  escreval("")
+  escreval("A soma de todos os números de 1 até ", n, " é: ", soma)
+
+fimalgoritmo

@@ -1,0 +1,30 @@
+Algoritmo "exercicio8_ClubeBeneficios"
+
+// Um cliente recebe um desconto especial se for cliente VIP E a compra for maior que R$300.
+// Leia: Cliente VIP (V/F) e valor da compra, e informe se ele receberá o desconto.
+
+Var
+// Seção de Declarações das variáveis
+   ehVip : caractere
+   valorCompra : real
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   escreval("=== CLUBE DE BENEFÍCIOS ===")
+   escreval("O cliente é VIP? (VERDADEIRO ou FALSO): ")
+   leia(ehVip)
+
+   escreval("Digite o valor total da compra (R$): ")
+   leia(valorCompra)
+
+   escreval("")
+
+   // Para ganhar o desconto, precisa SER VIP E a compra ser MAIOR QUE 300
+   se (ehVip = verdadeiro) e (valorCompra > 300.00) entao
+      escreval("Desconto Especial: APLICADO!")
+   senao
+      escreval("Desconto Especial: NÃO APLICÁVEL.")
+   fimse
+
+fimalgoritmo

@@ -1,0 +1,46 @@
+Algoritmo "exercicio3_FaixaDeDesconto"
+
+// Leia o valor da compra e informe o desconto: até R$100,00 -> sem desconto;
+// de R$100,01 até R$300,00 -> 5%; de R$300,01 até R$600,00 -> 10%;
+// acima de R$600,00 -> 15%. Ao final, exiba o valor da compra,
+// o percentual de desconto e o valor final.
+
+Var
+// Seção de Declarações das variáveis
+   compra, percentual, valorDesconto, valorFinal : real
+   
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   //Calculo De Desconto
+   escreval("Digite o valor da compra (R$): ")
+   leia(compra)
+
+   //Identifica a porcentagem de desconto
+   se (compra <= 100.00) entao
+      percentual <- 0
+   senao
+      se (compra <= 300.00) entao
+         percentual <- 5
+      senao
+         se (compra <= 600.00) entao
+            percentual <- 10
+         senao
+            percentual <- 15
+         fimse
+      fimse
+   fimse
+
+   //Calcula os valores do desconto e final
+   valorDesconto <- compra * (percentual / 100)
+   valorFinal    <- compra - valorDesconto
+
+   //Exibe os resultados finais
+   escreval("")
+   escreval("Valor da compra: R$ ", compra:1:2)
+   escreval("Percentual de desconto: ", percentual, "%")
+   escreval("Valor do desconto: R$ ", valorDesconto:1:2)
+   escreval("Valor final a pagar: R$ ", valorFinal:1:2)
+
+fimalgoritmo

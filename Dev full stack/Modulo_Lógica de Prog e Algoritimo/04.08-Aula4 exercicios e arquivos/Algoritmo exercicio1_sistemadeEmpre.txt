@@ -1,0 +1,27 @@
+Algoritmo "exercicio1_sistemadeEmprestimo"
+
+// Uma financeira só aprova empréstimos para pessoas maiores de idade.
+// Crie um algoritmo que leia a idade do cliente e informe se o empréstimo foi
+// aprovado ou negado.
+
+Var
+// Seção de Declarações das variáveis
+   idade : inteiro
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   escreval("=== FINANCEIRA - ANÁLISE DE CRÉDITO ===")
+   escreval("Digite a idade do cliente: ")
+   leia(idade)
+
+   escreval("")
+
+   // Verifica se a idade é igual ou maior que 18 anos
+   se (idade >= 18) entao
+      escreval("Empréstimo APROVADO!")
+   senao
+      escreval("Empréstimo NEGADO! O cliente precisa ser maior de idade.")
+   fimse
+
+fimalgoritmo

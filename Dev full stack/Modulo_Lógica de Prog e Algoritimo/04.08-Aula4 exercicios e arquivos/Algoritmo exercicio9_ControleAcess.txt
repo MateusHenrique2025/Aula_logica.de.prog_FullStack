@@ -1,0 +1,58 @@
+Algoritmo "exercicio09_ControleAcessoEmpresa"
+
+// Funcionários entram se: identificado E possuírem crachá.
+// Visitantes entram se: acompanhados OU possuírem autorização prévia.
+// Leia: É funcionário? (V/F), Possui crachá? (V/F), 
+// Está acompanhado? (V/F), Possui autorização? (V/F) e informe se o acesso foi permitido.
+
+Var
+// Seção de Declarações das variáveis 
+   ehFuncionario, possuiCracha : logico
+   estaAcompanhado, possuiAutorizacao : logico
+   acessoPermitido : logico
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   escreval("=== CONTROLE DE ACESSO DA EMPRESA ===")
+   
+   escreval("A pessoa é funcionário? (VERDADEIRO ou FALSO): ")
+   leia(ehFuncionario)
+
+   escreval("Possui crachá? (VERDADEIRO ou FALSO): ")
+   leia(possuiCracha)
+
+   escreval("Está acompanhado? (VERDADEIRO ou FALSO): ")
+   leia(estaAcompanhado)
+
+   escreval("Possui autorização prévia? (VERDADEIRO ou FALSO): ")
+   leia(possuiAutorizacao)
+
+   escreval("")
+
+   // Regra do Funcionário: Precisa ser funcionário E ter crachá
+   // Regra do Visitante (NÃO funcionário): Precisa estar acompanhado OU ter autorização
+   
+   se (ehFuncionario = verdadeiro) entao
+      se (possuiCracha = verdadeiro) entao
+         acessoPermitido <- verdadeiro
+      senao
+         acessoPermitido <- falso
+      fimse
+   senao
+      // Se não é funcionário, é considerado visitante
+      se (estaAcompanhado = verdadeiro) ou (possuiAutorizacao = verdadeiro) entao
+         acessoPermitido <- verdadeiro
+      senao
+         acessoPermitido <- falso
+      fimse
+   fimse
+
+   // Resultado final
+   se (acessoPermitido = verdadeiro) entao
+      escreval("Acesso PERMITIDO!")
+   senao
+      escreval("Acesso NEGADO!")
+   fimse
+
+fimalgoritmo

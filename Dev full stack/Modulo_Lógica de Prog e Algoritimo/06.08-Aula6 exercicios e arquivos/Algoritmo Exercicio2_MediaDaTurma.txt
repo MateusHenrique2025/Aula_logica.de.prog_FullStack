@@ -1,0 +1,36 @@
+Algoritmo "Exercicio2_MediaDaTurma"
+
+// Uma turma possui 5 alunos. Leia a nota de cada aluno e ao final exiba a
+// média da turma. Estrutura: PARA.
+
+Var
+// Seção de Declarações das variáveis
+   i : inteiro
+   nota, somaNotas, mediaTurma: real
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   // Inicializa o acumulador das notas
+   somaNotas <- 0
+
+   escreval("Calculo DA Média da turma")
+   escreval(" ")
+
+   // Laço de repetição de 1 até 5 alunos
+   para i de 1 ate 5 faca
+      escreval("Digite a nota do ", i, "º aluno: ")
+      leia(nota)
+
+      // Acumula a nota lida
+      somaNotas <- somaNotas + nota
+   fimpara
+
+   // Calcula a média dividindo o total somado por 5
+   mediaTurma <- somaNotas / 5
+
+   // Exibe o resultado final
+   escreval("A média final da turma é: ", mediaTurma)
+   escreval(" ")
+
+fimalgoritmo

@@ -1,0 +1,25 @@
+Algoritmo "Exercicio4_DoisemDois"
+
+// Leia um número N digitado pelo usuário e imprima de 1 até N,
+// de dois em dois. Estrutura: PARA.
+
+Var
+// Seção de Declarações das variáveis
+   n, i : inteiro
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   escreval("Valores De 1 Até N")
+   escreval("Digite o valor limite (N): ")
+   leia(n)
+
+   escreval("")
+   escreval("Sequência de números:")
+
+   // O comando PASSO 2 faz a variável "i" incrementar de 2 em 2
+   para i de 1 ate n passo 2 faca
+      escreval(i)
+   fimpara
+
+fimalgoritmo

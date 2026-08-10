@@ -1,0 +1,19 @@
+Algoritmo "exercicio4"
+
+Var
+// Seção Declaração das variáveis
+
+idade : inteiro
+
+Inicio
+  // Seção de comandos 
+  escreval(" Digite sua idade: ")
+  leia("idade")
+
+  se idade >=18 então
+    escreval("pode dirigir!")
+ senão
+    escreval(" Não pode dirigir!")
+ fimse
+
+Finalalgorritmo

@@ -1,0 +1,43 @@
+Algoritmo "Exercicio7_EscolhaDoMenu"
+
+// Exiba o menu: 1 – Novo cadastro, 2 – Consultar, 3 – Sair. Leia a
+// opção escolhida até que o usuário escolha uma opção válida (1, 2 ou 3),
+// depois informe qual opção foi escolhida. Estrutura: REPITA.
+
+Var
+// Seção de Declarações das variáveis
+   opcao : inteiro
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   // O laço REPITA executa o bloco primeiro e depois checa a condição no ATE
+   repita
+      escreval("Menu Principal")
+      escreval("1 – Novo cadastro")
+      escreval("2 – Consultar")
+      escreval("3 – Sair")
+      escreval("")
+      escreval("Digite uma opção desejada: ")
+      leia(opcao)
+
+      // Mensagem de alerta caso o usuário digite um valor fora do intervalo [1, 3]
+      se (opcao < 1) ou (opcao > 3) entao
+         escreval("")
+         escreval("Opção inválida! Tente novamente.")
+      fimse
+
+   ate (opcao >= 1) e (opcao <= 3)
+
+   // Exibe qual opção válida foi digitada
+   escreval("")
+   escolha opcao
+      caso 1
+         escreval("Opção escolhida: Novo cadastro")
+      caso 2
+         escreval("Opção escolhida: Consultar")
+      caso 3
+         escreval("Opção escolhida: Sair")
+   fimescolha
+
+fimalgoritmo

@@ -1,0 +1,43 @@
+Algoritmo "exercicio17_AprovadosEReprovados"
+
+// Leia a quantidade de alunos. Depois leia a média de cada aluno (média >= 7 -> aprovado).
+// Ao final informe quantos alunos foram aprovados e quantos foram reprovados.
+
+Var
+// Seção de Declarações das variáveis
+   qtdAlunos, i, aprovados, reprovados : inteiro
+   media : real
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   // Inicializamos os contadores de aprovação e reprovação com zero
+   aprovados <- 0
+   reprovados <- 0
+
+   // 1. Pergunta quantos alunos a turma tem
+   escreval("Digite a quantidade de alunos da turma: ")
+   leia(qtdAlunos)
+   escreval("")
+
+   // 2. Repete o processo de pedir a média para cada aluno
+   para i de 1 ate qtdAlunos faca
+      escreval("Digite a média do ", i, "º aluno: ")
+      leia(media)
+
+      // Se a média for maior ou igual a 7, aprova. Se não, reprova.
+      se (media >= 7.0) entao
+         aprovados <- aprovados + 1
+      senao
+         reprovados <- reprovados + 1
+      fimse
+
+      escreval("")
+   fimpara
+
+   // 3. Exibe o resultado final acumulado
+   escreval("=== RESULTADO FINAL ===")
+   escreval("Alunos Aprovados: ", aprovados)
+   escreval("Alunos Reprovados: ", reprovados)
+
+fimalgoritmo

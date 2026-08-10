@@ -1,0 +1,29 @@
+Algoritmo "exercicio7_LoginSistema"
+
+// Um usuário poderá acessar o sistema caso seja administrador OU possua uma senha válida. 
+// Leia: Administrador (V/F) e Senha correta (V/F), e informe se o acesso foi liberado.
+
+Var
+// Seção de Declarações das variáveis 
+   ehAdmin, senhaCorreta : logico
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   escreval("=== AUTENTICAÇÃO DO SISTEMA ===")
+   escreval("O usuário é administrador? (VERDADEIRO ou FALSO): ")
+   leia(ehAdmin)
+
+   escreval("A senha digitada está correta? (VERDADEIRO ou FALSO): ")
+   leia(senhaCorreta)
+
+   escreval("")
+
+   // Basta APENAS UMA das condições ser verdadeira para liberar o acesso
+   se (ehAdmin = verdadeiro) ou (senhaCorreta = verdadeiro) entao
+      escreval("Acesso LIBERADO!")
+   senao
+      escreval("Acesso NEGADO! É necessário ser administrador ou informar a senha correta.")
+   fimse
+
+fimalgoritmo

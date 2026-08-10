@@ -1,0 +1,53 @@
+Algoritmo "Exercício1—CadastroDeNotas"
+
+// Crie um algoritmo que declare um vetor para armazenar 5 notas,
+//solicite ao usuário que informe cada nota e  ao final, exiba todas as notas
+//cadastradas na ordem em que foram informadas e em ordem decrescente.
+//Ajuda: 1º faça um  laço para ler as notas e guardar no vetor;
+//Depois faça um laço para exibir as notas; Para ordem decrescente compare
+//cada posição com todas as posições que vêm depois dela
+//(use dois laços: laço externo escolhe a posição atual;
+//o laço interno procura um valor maior nas posições seguintes.
+
+Var
+   // Vetor para armazenar as 5 notas
+   notas: vetor [1..5] de real
+
+   // Variáveis auxiliares para os laços e para a troca de valores
+   i, j: inteiro
+   aux: real
+
+Inicio
+   // 1º PASSO: Leitura e armazenamento das notas
+   escreval("Cadrasto das notas")
+   para i de 1 ate 5 faca
+      escreva("Digite a ", i, "ª nota: ")
+      leia(notas[i])
+   fimpara
+   // 2º PASSO: Exibição na ordem original
+   escreval("")
+   escreval("Norta na ordem informada")
+   para i de 1 ate 5 faca
+      escreval(i, "ª nota cadastrada: ", notas[i]:2:1)
+   fimpara
+   // 3º PASSO: Ordenação decrescente (Selection Sort)
+   // O laço externo (i) fixa a posição atual
+   para i de 1 ate 4 faca
+      // O laço interno (j) compara com todas as posições seguintes
+      para j de i + 1 ate 5 faca
+         // Se encontrar um valor maior à frente, faz a troca
+         se notas[j] > notas[i] entao
+            aux <- notas[i]
+            notas[i] <- notas[j]
+            notas[j] <- aux
+         fimse
+      fimpara
+   fimpara
+   // 4º PASSO: Exibição na ordem decrescente
+   escreval("")
+   escreval("Notas em ordem decrescente")
+   para i de 1 ate 5 faca
+      escreval(i, "º lugar: ", notas[i]:2:1)
+   fimpara
+
+Fimalgoritmo

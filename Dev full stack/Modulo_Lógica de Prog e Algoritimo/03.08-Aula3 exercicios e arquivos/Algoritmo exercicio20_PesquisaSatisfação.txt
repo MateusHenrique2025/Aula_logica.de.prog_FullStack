@@ -1,0 +1,66 @@
+Algoritmo "exercicio20_PesquisaSatisfacao"
+
+// Uma empresa entrevistou vários clientes. Para cada cliente leia uma nota de 1 a 5.
+// A pesquisa termina quando o usuário informar 0. Ao final informe: quantidade
+// de respostas, média das notas, quantos responderam 5 e quantos responderam 1.
+
+Var
+// Seção de Declarações das variáveis
+   nota, totalRespostas, contNota5, contNota1 : inteiro
+   somaNotas, media : real
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   // Inicializamos os contadores e acumuladores
+   totalRespostas <- 0
+   somaNotas      <- 0
+   contNota5      <- 0
+   contNota1      <- 0
+
+   escreval("=== PESQUISA DE SATISFAÇÃO ===")
+   escreval("Digite uma nota de 1 a 5 (ou 0 para encerrar):")
+   leia(nota)
+
+   // O laço continua enquanto a nota for diferente de 0
+   enquanto (nota <> 0) faca
+
+      // Validação: aceita apenas notas no intervalo correto (1 a 5)
+      se (nota >= 1) e (nota <= 5) entao
+         totalRespostas <- totalRespostas + 1
+         somaNotas      <- somaNotas + nota
+
+         // Verificação das notas específicas (5 e 1)
+         se (nota = 5) entao
+            contNota5 <- contNota5 + 1
+         fimse
+
+         se (nota = 1) entao
+            contNota1 <- contNota1 + 1
+         fimse
+      senao
+         escreval("Nota inválida! Digite apenas valores de 1 a 5 (ou 0 para encerrar).")
+      fimse
+
+      escreval("")
+      escreval("Digite a próxima nota (ou 0 para encerrar):")
+      leia(nota)
+   fimenquanto
+
+   // Exibição dos resultados finais
+   escreval("")
+   escreval("=== RESULTADO DA PESQUISA ===")
+
+   se (totalRespostas > 0) entao
+      // Cálculo da média
+      media <- somaNotas / totalRespostas
+
+      escreval("Total de respostas registradas: ", totalRespostas)
+      escreval("Média das notas: ", media:1:2)
+      escreval("Quantidade de notas 5 (Excelente): ", contNota5)
+      escreval("Quantidade de notas 1 (Péssimo): ", contNota1)
+   senao
+      escreval("Nenhuma resposta válida foi inserida.")
+   fimse
+
+fimalgoritmo

@@ -1,0 +1,33 @@
+Algoritmo "exercicio03_ComparacaoPrecos"
+
+// Leia o preço de dois produtos. Informe qual produto é mais caro
+// e se ambos possuem o mesmo preço.
+
+Var
+// Seção de Declarações das variáveis
+   preco1, preco2 : real
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   escreval("=== COMPARAÇÃO DE PREÇOS ===")
+   escreval("Digite o preço do primeiro produto (R$): ")
+   leia(preco1)
+
+   escreval("Digite o preço do segundo produto (R$): ")
+   leia(preco2)
+
+   escreval("")
+
+   // Comparações de preço
+   se (preco1 > preco2) entao
+      escreval("O primeiro produto é o mais caro!")
+   senao
+      se (preco2 > preco1) entao
+         escreval("O segundo produto é o mais caro!")
+      senao
+         escreval("Ambos os produtos possuem o mesmo preço.")
+      fimse
+   fimse
+
+fimalgoritmo

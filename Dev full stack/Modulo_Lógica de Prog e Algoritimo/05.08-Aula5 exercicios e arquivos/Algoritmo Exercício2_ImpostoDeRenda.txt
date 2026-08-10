@@ -1,0 +1,33 @@
+Algoritmo "Exercício2_ImpostoDeRenda"
+
+//Leia o salário e classifique: até R$2.500 ? Isento; até R$5.000 ?
+//Faixa 1; até R$8.000 ? Faixa 2; acima disso ? Faixa 3.
+
+Var
+// Seção de Declarações das variáveis
+   salario: real
+
+Inicio
+// Seção de comandos, procedimentos, funções, operador
+	//salario
+  escreval ("Digite seu salario(R$): ")
+	leia(salario)
+
+	escreval ("Valor do salario: ", salario)
+
+	   se( salario <= 2.500 ) entao
+          escreval ("Isento: ", salario )
+      senao
+      se( salario <= 5.000 ) entao
+          escreval ("Faixa1: ", salario )
+      senao
+      se( salario <= 8.000 ) entao
+          escreval ("Faixa2: ", salario )
+      senao
+      se( salario >= 9.000 )entao
+          escreval ("Faixa3: ", salario )
+      fimse
+           fimse
+                fimse
+                     fimse
+fimalgoritmo

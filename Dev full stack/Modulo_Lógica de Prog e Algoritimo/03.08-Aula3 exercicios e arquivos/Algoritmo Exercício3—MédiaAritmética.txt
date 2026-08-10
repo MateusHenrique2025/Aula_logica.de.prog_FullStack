@@ -1,0 +1,21 @@
+Algoritmo "Exercício3—MédiaAritmética"
+
+// Crie um algoritmo que leia duas notas e calcule a média aritmética.
+Var
+// Seção de Declarações das variáveis 
+// obs: real é 0.0 inteiro é 0, é só modificar
+	nota1, nota2, media: real
+
+Inicio
+// Seção de comandos, procedimentos, funções, operador
+	//primeira nota
+  escreval ("Digite primeira nota: ")
+	leia(nota1)
+  //segunda nota
+  escreval ("Digite segunda nota: ")
+	leia(nota2)
+
+  media <- (nota1 + nota2) /2
+	escreval ("media da nota: ", media)
+  
+fimalgoritmo

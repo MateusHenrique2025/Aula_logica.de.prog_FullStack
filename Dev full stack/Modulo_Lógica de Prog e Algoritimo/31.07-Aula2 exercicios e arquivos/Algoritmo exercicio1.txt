@@ -1,0 +1,10 @@
+Algoritmo "exercicio1"
+
+Var
+// Seção Declaração das variáveis 
+
+Inicio
+// Seção de comandos 
+escreval("Olá mundo")
+
+fimalgoritmo

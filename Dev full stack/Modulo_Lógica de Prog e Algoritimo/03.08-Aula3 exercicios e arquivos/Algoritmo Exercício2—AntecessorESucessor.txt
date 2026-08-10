@@ -1,0 +1,20 @@
+Algoritmo "Exercício2—AntecessorESucessor"
+
+// Crie um algoritmo que leia um número inteiro e mostre seu antecessor e sucessor.
+Var
+// Seção de Declarações das variáveis 
+
+	numero, antecessor, sucessor: inteiro
+
+Inicio
+// Seção de comandos, procedimentos, funções, operador
+	escreval ("Digite um numero: ")
+	leia(numero)
+
+	antecessor <- numero -1
+	escreval ("Você digitou o numero: ",numero)
+	escreval ("o antecessor dele é ", antecessor)
+  sucessor <-numero +1
+  escreval ("o sucessor dele é ", sucessor)
+  
+fimalgoritmo

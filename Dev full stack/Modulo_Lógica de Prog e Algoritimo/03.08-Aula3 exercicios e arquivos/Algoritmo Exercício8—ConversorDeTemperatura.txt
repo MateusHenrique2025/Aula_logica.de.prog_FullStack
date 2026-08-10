@@ -1,0 +1,17 @@
+Algoritmo "Exercício8—ConversorDeTemperatura"
+
+//Leia a temperatura em graus Celsius e converta para Fahrenheit (F = (C × 9 / 5) + 32).
+Var
+// Seção de Declarações das variáveis 
+	  C ,  F: real
+  
+Inicio
+// Seção de comandos, procedimentos, funções, operador
+	//graus Celsius
+  escreval ("Digite o grau C: ")
+	leia(C)
+  // Calculo de conversão para Fahrenheit 
+  F <- (C * 9 / 5) + 32
+	escreval ("valor convertido: ", F )
+  
+fimalgoritmo

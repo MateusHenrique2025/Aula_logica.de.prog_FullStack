@@ -1,0 +1,51 @@
+Algoritmo "Exercício2-NúmeroMaior"
+
+//Crie um algoritmo que declare um vetor com 8 números inteiros, solicite
+//que o usuário informe todos os valores. Ao final, exiba o maior número
+//armazenado e a posição em que ele foi encontrado no vetor.
+//Ajuda: 1º faça um laço para ler os 8 números e guardar no vetor.
+//Use duas variáveis auxiliares, maior e posicao, pra guardar o maior valor
+//encontrado até agora e em que posição ele apareceu. Comece considerando o
+//primeiro número lido (posição 0) como o maior,
+//assim você não corre o risco de chutar um valor inicial errado. Depois, a
+//cada novo número lido, compare com o maior atual: se for maior,
+//atualize as duas variáveis (maior e posicao)
+
+Var
+   // Vetor para armazenar os 8 números inteiros
+   numeros: vetor [1..8] de inteiro
+
+   // Variáveis auxiliares para controle e resultado
+   i: inteiro
+   maior, posicao: inteiro
+
+Inicio
+
+   // 1º PASSO: Leitura dos 8 números
+   escreval("Entrada de dados")
+   para i de 1 ate 8 faca
+      escreva("Digite o ", i, "º número inteiro: ")
+      leia(numeros[i])
+   fimpara
+
+   // 2º PASSO: Inicialização com o primeiro elemento
+   // Considera o primeiro elemento como o maior inicial
+   maior <- numeros[1]
+   posicao <- 1
+
+   // 3º PASSO: Comparação com os demais elementos
+   // Percorre a partir da posição 2 até a 8
+   para i de 2 ate 8 faca
+      se numeros[i] > maior entao
+         maior <- numeros[i]
+         posicao <- i
+      fimse
+   fimpara
+
+   // 4º PASSO: Exibição do resultado
+   escreval("")
+   escreval("Resultado")
+   escreval("O maior número encontrado foi: ", maior)
+   escreval("Encontrado na posição (índice): ", posicao)
+
+Fimalgoritmo

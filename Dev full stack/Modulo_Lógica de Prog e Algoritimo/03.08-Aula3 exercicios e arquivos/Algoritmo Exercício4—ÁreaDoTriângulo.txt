@@ -1,0 +1,21 @@
+Algoritmo "Exercício4—ÁreaDoTriângulo"
+
+//  Crie um algoritmo que calcule a área de um triângulo. Fórmula: área = (base x altura) /2
+Var
+// Seção de Declarações das variáveis 
+
+	base, altura, area: real
+
+Inicio
+// Seção de comandos, procedimentos, funções, operador
+	//valor da altura
+  escreval ("Digite a base: ")
+	leia(base)
+  //valor da base
+  escreval ("Digite a altura: ")
+	leia(altura)
+ //calculo da área do triangulo
+  area <- (base * altura) /2
+	escreval ("area do triangulo: ", area)
+  
+fimalgoritmo

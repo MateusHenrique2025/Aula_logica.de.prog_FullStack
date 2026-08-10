@@ -1,0 +1,32 @@
+Algoritmo "Exercicio6_SomaDasCompras"
+
+// Leia o valor de cada produto da compra de um cliente.
+// A leitura deve continuar enquanto o valor informado for diferente de 0.
+// Ao final, exiba o valor total das compras. Estrutura: ENQUANTO.
+
+Var
+// Seção de Declarações das variáveis
+   valorProduto, totalCompra : real
+
+Inicio
+// Seção de comandos, procedimentos, funções, operadores
+
+   // Inicializa o totalizador com 0
+   totalCompra <- 0
+
+   escreval("Digite o valor do produto (ou 0 para finalizar): ")
+   leia(valorProduto)
+
+   // Repete a leitura e a soma enquanto o valor for diferente de 0
+   enquanto (valorProduto <> 0) faca
+      totalCompra <- totalCompra + valorProduto
+
+      escreval("Digite o valor do próximo produto (ou 0 para finalizar): ")
+      leia(valorProduto)
+   fimenquanto
+
+   // Exibe o total final
+   escreval("Valor total das compras: R$ ", totalCompra)
+   escreval(" ")
+
+fimalgoritmo

@@ -1,0 +1,25 @@
+Algoritmo "exercicio11_Múltiplo de 5"
+
+//Crie um algoritmo que leia um número inteiro N e mostre todos
+//os múltiplos de 5 entre 1 e N.
+
+Var
+// Seção de Declarações das variáveis
+   n, i: inteiro
+   
+Inicio
+// Seção de comandos, procedimentos, funções, operador
+
+  //Numero1
+  escreval ("Digite um valor N: ")
+  leia(n)
+	
+  escreval("")
+  escreval("Múltiplos de 5 entre 1 e ", n, ":")
+
+  // O laço começa em 5 e vai saltando de 5 em 5 até atingir N
+  para i de 5 ate n passo 5 faca
+  escreval(i)
+  fimpara
+  
+fimalgoritmo
