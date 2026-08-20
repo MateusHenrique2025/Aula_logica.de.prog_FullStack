@@ -1,0 +1,40 @@
+*Primeira atividade* 
+
+Curso de Capacitação em Desenvolvimento Full Stack
+Módulo 2  -  Arquitetura da Informação
+
+Aluno: Mateus Henrique de Souza Pinheiro
+
+1. Experiência do Usuário (UX) e Navegação
+Estrutura de Editais e Resultados:
+Problema: A listagem de editais e resultados é extensa e misturada em formato de feed/notícias.
+Melhoria: Criar uma página/módulo exclusivo para "Editais e Processos Seletivos" com filtros de busca (ex: Status: Aberto / Encerrado, Cidade: Manaus / Boa Vista, Categoria: Cursos / Pós-Graduação).
+Centralização de links externos (Google Drive):
+Problema: Os PDFs de editais e listas de homologação/resultado abrem diretamente em links do Google Drive.
+Melhoria: Ter um visualizador próprio dentro do site ou repositório oficial de arquivos, passando mais profissionalismo e segurança institucional.
+Navegação por Unidade/Pólo (Manaus vs. Boa Vista):
+Problema: Como o ITEAM atua em diferentes cidades da região Amazônica, as informações sobre os cursos (como Full Stack em Boa Vista) ficam dispersas nas notícias gerais.
+Melhoria: Adicionar uma opção no topo do site para o usuário selecionar a sua unidade/cidade de interesse.
+2. Design e Identidade Visual (UI)
+Design e Layout Responsivo:
+Problema: O layout possui uma estrutura visual mais legada, com elementos de texto densos e botões genéricos de "Clique para ver mais opções".
+Melhoria: Modernizar o design com um grid mais limpo, tipografia contemporânea, cartões (cards) visuais para áreas de atuação e destaque para chamadas principais (banners dinâmicos).
+Área do Aluno / Portal do Estudante:
+Problema: Ausência de um acesso rápido e visível no cabeçalho para alunos já matriculados (como um ambiente virtual de aprendizagem / AVA).
+Melhoria: Incluir um botão destacado como "Área do Aluno" ou "Portal do Candidato" na barra superior.
+3. Conteúdo e Informações das Formações
+Páginas Internas Dedicadas aos Cursos:
+Problema: As informações sobre cursos e capacitações geralmente ficam restritas ao texto da publicação ou ao PDF do edital.
+Melhoria: Criar páginas exclusivas para as formações principais (ex: Curso de Desenvolvimento Full Stack), detalhando a ementa/grade curricular, requisitos, carga horária, corpo docente e formulário de inscrição direta na própria página.
+Depoimentos e Casos de Sucesso:
+Problema: Foco excessivo no formato institucional e burocrático de divulgação.
+Melhoria: Incluir uma seção de impacto social com histórias de alunos formados, projetos desenvolvidos (PD&I) e parcerias com indústrias e governos.
+4. Otimização Técnica e Acessibilidade (SEO/Performance)
+Otimização de SEO (Mecanismos de Busca):
+Problema: A estrutura das páginas precisa de meta-tags otimizadas para que quem pesquise por "cursos de tecnologia gratuitos em Boa Vista" ou "capacitação em Manaus" encontre as notícias no topo do Google.
+Melhoria: Ajustar títulos H1/H2, meta-descrições e mapas do site (sitemap.xml).
+Recursos de Acessibilidade:
+Melhoria: Implementar ferramentas de acessibilidade nativas no site, como ajuste de contraste, aumento de fonte e integração nativa com o VLibras.
+Resumo da Recomendação
+Para alavancar o portal, o maior salto de qualidade viria ao separar o Portal do Aluno/Candidato (focado em editais e formulários) da Página Institucional (focada nos serviços de inovação, parcerias de PD&I e consultorias da Indústria 4.0).
+

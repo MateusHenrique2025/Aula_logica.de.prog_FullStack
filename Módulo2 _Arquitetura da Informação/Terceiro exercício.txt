@@ -1,0 +1,65 @@
+*Terceiro exercício*
+
+Curso de Capacitação em Desenvolvimento Full Stack
+Módulo 2  -  Arquitetura da Informação
+Aluno: Mateus Henrique de Souza Pinheiro
+
+Atividade Prática: Análise Crítica do Sistema de Busca (G1)
+Portal Analisado: G1 (Globo.com)
+Objetivo: Avaliar a eficiência do mecanismo de busca interno considerando Relevância, Filtros e Autocompletar.
+1. Autocompletar (Autocomplete / Sugestões)
+Como funciona na prática: Ao digitar os primeiros termos na barra de busca (ex: "eleiç", "infla"), o sistema exibe uma lista suspensa com sugestões de termos mais buscados ou palavras-chave correlatas.
+Pontos Fortes:
+Reduz a digitação do usuário e previne erros gramaticais comuns.
+Resposta rápida e dinâmica.
+Pontos Fracos / Oportunidades de Melhoria:
+O autocomplete foca quase exclusivamente em palavras-chave, sem exibir miniaturas/cards prévios de manchetes ou matérias de última hora direto no dropdown (algo comum em mecanismos mais modernos).
+2. Filtros Disponíveis (Refinamento e Facetas)
+Como funciona na prática: Na tela de resultados da busca, o G1 entrega opções de refinamento lateral/superior.
+Filtros presentes:
+Tipo de Conteúdo / Mídia: Notícias, Vídeos, Áudios (Podcasts), Blogs/Colunas.
+Período Temporal: Últimas 24 horas, Última semana, Último mês, Ano ou intervalo personalizado.
+Editoria / Região: Possibilidade de segmentar por editorias (Economia, Política, Tecnologia) ou por praças regionais (G1 RR, G1 SP, etc.).
+Crítica de Usabilidade:
+Os filtros cobrem bem as necessidades básicas, mas em buscas mais genéricas a combinação de múltiplos filtros (busca facetada avançada) pode ser pouco intuitiva na versão mobile.
+3. Relevância dos Resultados
+Como funciona na prática: O algoritmo do portal prioriza matérias por relevância semântica e frescor temporal (notícias recentes têm grande peso).
+Pontos Fortes:
+Notícias de última hora (breaking news) sobre temas quentes ranqueiam no topo com facilidade.
+Matérias com tags exatas são encontradas com precisão.
+Pontos Fracos / Oportunidades de Melhoria:
+Em buscas amplas ou com termos polissêmicos, o sistema ocasionalmente mistura conteúdos muito antigos de arquivo com notícias recentes de menor relevância direta.
+A ordenação padrão nem sempre deixa claro se o critério principal foi a data mais recente ou a correspondência exata.
+Conclusão e Avaliação Geral
+Veredito: O sistema de busca do G1 cumpre bem o papel principal de um portal de notícias em tempo real, tendo como destaque a agilidade e os filtros temporais (essenciais para o jornalismo). O sistema ganha eficiência se integrasse resultados visuais instantâneos no autocompletar e um refinamento mais amigável na versão mobile.
+
+
+
+
+
+
+Etapas detalhadas do fluxo:
+Entrada: Usuário acessa via barra de busca (com autocomplete ativo) ou navega pela árvore de departamentos/categorias.
+Exibição Inicial (PLP): O sistema exibe os produtos correspondentes com opções de ordenação (Mais relevantes, Menor preço, Mais vendidos, Melhores avaliações).
+Refinamento: O usuário seleciona múltiplos filtros simultâneos na barra lateral (desktop) ou modal/gaveta (mobile) sem recarregar a página inteira (usando AJAX/carregamento dinâmico).
+Decisão e Seleção: O usuário clica no item desejado e segue para a página de detalhes (PDP) e finalização de compra.
+B. Filtros Facetados Necessários (Para Refinamento Eficiente)
+Para um e-commerce de grande porte (ex: departamento de eletrônicos/tecnologia), os filtros facetados essenciais dividem-se em gerais e específicos por categoria:
+1. Filtros Gerais (Presentes em qualquer categoria)
+Faixa de Preço: Campo editável de valor Mínimo/Máximo + barra deslizante (slider) com contagem de itens por faixa.
+Avaliação dos Clientes: Filtro por estrelas (ex: ★★★★☆ e acima).
+Condição de Frete e Entrega: "Frete Grátis", "Entrega Rápida / No mesmo dia", "Retirar na loja".
+Descontos e Promoções: "Apenas ofertas", "Cupom disponível", "Queima de estoque".
+Disponibilidade / Estoque: "Apenas produtos em estoque / Pronta entrega".
+2. Filtros Específicos / Técnicos (Contextuais por Categoria)
+Marca / Fabricante: Caixas de seleção múltipla (checkboxes) com campo de busca interna rápida para marcas populares (ex: Samsung, Apple, Xiaomi).
+Especificações Técnicas (Exemplo: Smartphones/Notebooks):
+Armazenamento interno: (64 GB, 128 GB, 256 GB, 512 GB).
+Memória RAM: (4 GB, 8 GB, 16 GB, 32 GB).
+Cor / Acabamento: Paleta visual clicável com as cores disponíveis.
+Sistema Operacional: (Android, iOS, Windows, Linux).
+Vendido por (Marketplace): "Vendido e entregue pela própria loja" vs. "Lojas parceiras".
+Resumo da Entrega da Atividade
+Parte 1 (Análise Crítica): Avaliação de Relevância, Filtros e Autocomplete no portal de notícias (G1).
+Parte 2 (Design de Solução): Fluxo de navegação estruturado da Home ao Checkout + matriz completa de Filtros Facetados para e-commerce.
+

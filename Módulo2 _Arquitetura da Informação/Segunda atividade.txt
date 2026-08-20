@@ -1,0 +1,40 @@
+*Segunda atividade*
+
+Curso de Capacitação em Desenvolvimento Full Stack
+Módulo 2  -  Arquitetura da Informação
+Aluno: Mateus Henrique de Souza Pinheiro
+
+G1 - PORTAL DE NOTÍCIAS DA GLOBO
+
+o site não é muito intuitivo, e para uma pessoa que tem pouco entendimento sobre sites e como eles funcionam fica um pouco difícil de entender 
+
+Principais Dores de UI/UX do G1
+1. Poluição Visual e Ads Agressivos
+Gargalo: O topo e as laterais das páginas costumam ser tomados por banners publicitários pesados (takeovers, pop-ups de vídeo ou floating ads).
+Impacto no usuário: Causa desatenção (fadiga visual) e empurra o conteúdo principal para baixo da dobra (below the fold), além de prejudicar a velocidade de carregamento na Web.
+2. Scroll Infinito Desorientador (Feed Infinito)
+Gargalo: Em matérias e na home, à medida que o usuário rola a página, novos conteúdos são carregados automaticamente.
+Impacto no usuário: O leitor perde o senso de conclusão (não sabe onde a matéria termina) e tem extrema dificuldade para alcançar o rodapé da página (footer), onde costumam ficar links úteis de navegação, termos de uso ou contatos.
+3. Densidade de Informação e Hierarquia
+Gargalo: A home do portal utiliza múltiplos tamanhos de fontes, cartões de notícias adjacentes e blocos regionais misturados sem separadores visuais fortes.
+Impacto no usuário: Cria escaneabilidade ruim (low scannability). O olho do leitor não encontra um ponto focal claro quando há muitos destaques com pesos visuais parecidos concorrendo na mesma tela.
+4. Mudanças de Layout Inesperadas (Cumulative Layout Shift)
+Gargalo: Durante o carregamento da matéria, a inserção tardia de anúncios, widgets de tempo, cotações ou vídeos faz o texto "pular" para baixo.
+Impacto no usuário: O leitor clica em um link acidentalmente (misclick) porque o elemento mudou de posição no exato momento do clique.
+5. Navegação Regional e Subeditorias
+Gargalo: Embora a personalização por estado/cidade seja um ponto forte, a transição entre o G1 Nacional e as praças locais (ex: G1 Roraima, G1 SP) muitas vezes altera abruptamente a estrutura da página ou esconde menus principais dentro do botão hambúrguer.
+R7  - PORTAL DE NOTÍCIAS DA RECORD TV - 
+https://www.r7.com 
+
+1. Dores de Design e Usabilidade (UI/UX)
+Blocos de Anúncios Agressivos: O R7 faz uso ostensivo de banners de publicidade, pop-ups e vídeos flutuantes que cobrem o texto durante a leitura. Isso afeta o tempo de carregamento e causa poluição visual.
+Layout "Caótico" e Excesso de Cores/Fontes: A página inicial traz cartões (cards) de conteúdos de entretenimento, jornalismo e esportes misturados com diferentes pesos visuais, dificultando a escaneabilidade rápida (low scannability).
+Consumo de Memória / Performance: Devido ao número excessivo de elementos interativos, widgets de programas da Record e publicidades em vídeo, o site costuma ser pesado em conexões mobile ou em aparelhos mais intermediários.
+2. Linha Editorial e Conteúdo
+Excesso de Sensacionalismo e Clickbait: Críticos apontam que o portal abusa de manchetes chamativas e ambíguas, nas quais o leitor precisa abrir a matéria para descobrir que o fato é bem mais simples do que o título sugeria.
+Forte Mistura com Entretenimento e Fofoca: Na homepage, notícias sérias de política, economia e cidades competem diretamente com matérias de realities (como A Fazenda ou Grande Conquista), programas de TV e vida de celebridades.
+Vinculação Política e Institucional: Por ser o canal digital do Grupo Record, o portal é frequentemente criticado por reflexos da linha editorial da emissora em coberturas de política e costumes, recebendo acusações de viés conservador ou institucional.
+3. Experiência de Navegação e Funcionalidades
+Vídeos com Autoplay Barulhento: Uma das maiores reclamações em portais de grandes redes de TV (como o R7) é a reprodução automática de vídeos com áudio ou tocadores flutuantes que seguem o leitor ao rolar a página.
+Navegação Fragmentada: A integração entre as páginas dos programas da TV Record e a parte de jornalismo puro do R7 por vezes gera confusão nos menus de navegação.
+
